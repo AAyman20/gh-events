@@ -1,6 +1,7 @@
-import MainContent from './components/MainContent';
-import logo from './assets/images/logo.png';
+import MainContent from "./components/MainContent";
+import logo from "./assets/images/logo.png";
 
+// why we use React.Fragment instead of div
 function App() {
   return (
     <>
