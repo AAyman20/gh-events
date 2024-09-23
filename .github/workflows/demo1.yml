@@ -9,6 +9,7 @@ on:
       - master # master branch
       - "feature/*" # feature branches
       - "bugfix/**" # bugfix branches
+      - dev
     # paths: # if one of these paths is modified, the workflow will be triggered
     #   - 'src/**' # src folder
     #   - 'package.json' # package.json file
