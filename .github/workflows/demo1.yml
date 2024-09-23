@@ -1,9 +1,20 @@
 name: Events Demo 1
-on: 
+on:
   pull_request:
-    types: 
+    types:
       - opened
   workflow_dispatch:
+  push:
+    branches:
+      - master # master branch
+      - "feature/*" # feature branches
+      - "bugfix/**" # bugfix branches
+    # paths: # if one of these paths is modified, the workflow will be triggered
+    #   - 'src/**' # src folder
+    #   - 'package.json' # package.json file
+    # paths-ignore: # if one of these paths is modified, the workflow will not be triggered
+    #   - 'docs/**' # ignore docs folder
+    #   - 'README.md' # ignore README.md file
 jobs:
   deploy:
     runs-on: ubuntu-latest
